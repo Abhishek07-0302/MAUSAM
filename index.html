@@ -16,13 +16,18 @@
             <div class="flex-items"><input type="text" id="searchBox" rows="1" cols="35"></div>
             <div class="flex-items"><button onclick="search()"><img src="search.png" height="30px" width="30px"></button></div>
         </div>
-        <h1 class="text">16°C</h1>
-        <h2 class="text">Rainy</h2>
+        <h1 class="text" id="city"></h1>
+        <h1 class="text" id="temp">°C</h1>
+        <h2 class="text"></h2>
         <div class="flex-container-2">
             <div class="flex-items"><p class="text" id="date">Date & Time :</p></div>
             <!-- <div class="flex-items"><p class="text" id="time">Time:</p></div> -->
         </div>
     </div>
     <script src="index.js"></script>
+    <script>
+        link="https://api.openweathermap.org/data/2.5/weather?q={city name}&appid=c22f1bf16c3dc4482e5481af4d4a8649";
+        
+    </script>
 </body>
 </html>
